@@ -1,0 +1,159 @@
+.titleSobre{
+    text-align: center;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    font-family: "Inter", sans-serif;
+}
+
+.sectionNumbers, .sectionHistory{
+    margin-top: 20rem;
+}
+
+.sectionNumbers .tagsNumber{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem 2rem;
+}
+
+.sectionNumbers .tagsNumber .boxNumber{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sectionNumbers .tagsNumber .boxNumber .number{
+    font-size: 30px;
+    font-weight: 700;
+    border: 2px solid #226DB4;
+    max-width: 50px;
+    border-radius: 50%;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.3rem;
+}
+.sectionNumbers .tagsNumber .boxNumber .textNumber{
+    width: 100%;
+    max-width: 40rem;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #C8C8C8;
+}
+
+
+.sectionHistory .containerHero .boxTexts .textHistory, .sectionFaq .boxTexts .textHistory{
+    color: #226DB4;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+    display: block;
+}
+.sectionHistory .containerHero .boxTexts .textParagraph{
+    margin-bottom: 1.2rem;
+}
+
+/* SEÇÃO FAQ */
+.sectionFaq{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-top: 20rem;
+}
+.sectionFaq .boxTexts{
+    position: sticky;
+    top: 20px;
+}
+.sectionFaq .boxTexts h1{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 60rem;
+    font-family: 'Inter', sans-serif;
+}
+.sectionFaq .boxTexts h1 span{
+    color: #226DB4;
+}
+
+.sectionFaq .containerFaq {
+    width: 100%;
+    max-width: 70rem;
+}
+.sectionFaq .containerFaq .boxFaq details{
+    color: #C8C8C8;
+    font-size: 1.6rem;
+    border-bottom: 1px solid #87878760;
+    margin-bottom: 3rem;
+}
+.sectionFaq .containerFaq .boxFaq details summary{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 2rem 0;
+}
+.sectionFaq .containerFaq .boxFaq details summary span{
+    color: #fff;
+    font-weight: 600;
+}
+.sectionFaq .containerFaq .boxFaq details summary img{
+    width: 3rem;
+    transition: all .3s;
+}
+.sectionFaq .containerFaq .boxFaq details .answer{
+    padding-bottom: 2rem;
+}
+details[open] img {
+    transform: rotate(45deg);
+}
+
+.boxTextsHelp{
+    text-align: end;
+}
+
+
+@media(max-width: 1180px){
+    .sectionFaq .containerFaq {
+        max-width: 50rem;
+    }
+}
+
+@media(max-width: 950px){
+    .sectionFaq {
+        gap: 3rem;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 10rem;
+    }
+    .sectionFaq .boxTexts h1{
+        font-size: 3rem;
+    }
+    .sectionFaq .boxTexts{
+        position: initial;
+    }
+}
+
+@media(max-width: 950px){
+    .sectionNumbers .tagsNumber {
+        gap: 6rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 560px){
+    .sectionNumbers{
+        margin-top: 15rem;
+    }
+    .sectionHistory{
+        margin-top: 10rem;
+    }
+    .sectionNumbers .tagsNumber {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sectionNumbers .tagsNumber .boxNumber .textNumber{
+        max-width: 33rem;
+    }
+    .sectionFaq .boxTexts{
+        text-align: center;
+    }
+}

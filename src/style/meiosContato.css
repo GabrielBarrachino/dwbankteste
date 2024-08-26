@@ -1,0 +1,67 @@
+.sectionMeiosDeContato{
+    margin-top: 20rem;
+}
+
+.sectionMeiosDeContato .texts{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sectionMeiosDeContato .texts h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+.sectionMeiosDeContato .texts .subTitle{
+    color: #C8C8C8;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    max-width: 50rem;
+    text-align: center;
+}
+
+.sectionMeiosDeContato .boxContactMeios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    margin-top: 4rem;
+}
+.sectionMeiosDeContato .boxContactMeios .contactMeios .titleMeios{
+    color: #226DB4;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+    display: block;
+}
+.sectionMeiosDeContato .boxContactMeios .contactMeios .iconText{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.sectionMeiosDeContato .boxContactMeios .contactMeios .iconText span{
+    font-size: 1.6rem;
+}
+.sectionMeiosDeContato .boxContactMeios .contactMeios .iconText .iconContact{
+    max-width: 4rem;
+    height: 4rem;
+}
+
+@media(max-width: 920px){
+    .sectionMeiosDeContato{
+        margin-top: 10rem;
+    }
+    .sectionFaq {
+        flex-direction: column-reverse;
+    }
+}
+@media(max-width: 520px){
+    .sectionMeiosDeContato .boxContactMeios {
+        gap: 4rem;
+        flex-direction: column;
+    }
+}

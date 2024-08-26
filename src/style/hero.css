@@ -1,0 +1,182 @@
+.sectionSlides{
+    position: relative;
+}
+
+.containerMain{
+    margin-top: 12rem;
+}
+
+.containerHero{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+.containerHero .boxTexts h1{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 60rem;
+    font-family: 'Inter', sans-serif;
+}
+.containerHero .boxTexts h1 .spanBlue{
+    color: #226DB4;
+}
+
+.containerHero .buttons{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.4rem;
+}
+.containerHero .buttons .btnContactSecondary{
+    background-color: #226DB4;
+    font-size: 1.4rem;
+}
+.containerHero .buttons .btnSeeMore {
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.containerHero .buttons .btnSeeMore img {
+    max-width: 2.5rem;
+    transform: rotate(272deg);
+    transition: transform 0.3s ease, margin-left 0.3s ease;
+}
+
+.containerHero .buttons .btnSeeMore:hover img {
+    transform: rotate(272deg) translateY(5px);
+}
+.containerHero .tagsBox{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.containerHero .tagsBox div .tagTitle{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.containerHero .tagsBox div .tagText{
+    color: #C8C8C8;
+    font-size: 1.6rem;
+}
+
+.containerHero .imgSlide{
+    max-width: 70rem;
+}
+.containerHero .imgSlide img{
+    border-radius: 15px;
+    height: 100%;
+    max-height: 42.3rem;
+}
+
+.containerHero .containerImg{
+    position: relative;
+}
+.containerHero .containerImg .containerPrice{
+    background: #fff;
+    width: 100%;
+    max-width: 17rem;
+    padding: 1.3rem 1.6rem;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 22222;
+    top: 21.1rem;
+    left: -6.2rem;
+}
+
+.containerHero .containerImg .containerPrice .texts h4{
+    color: #3B3F49;
+    font-weight: 600;
+    font-size: 1.4rem;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: .7rem;
+}
+.containerHero .containerImg .containerPrice .texts p{
+    color: #5C5C5C;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+.containerHero .containerImg .containerPrice .texts .price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #05A528;
+    font-size: 1.6rem;
+}
+.containerHero .containerImg .containerPrice .texts .price .imgArrowGrow{
+    max-width: 2rem;
+}
+
+.swiper-button-next{
+    right: -20px !important;
+}
+
+@media (max-width: 1280px){
+    .containerHero .containerImg .containerPrice {
+        max-width: 15rem;
+        padding: 1rem;
+        top: 12rem;
+        left: -4rem;
+    }
+}
+@media (max-width: 1140px){
+    .containerHero .boxTexts .text {
+        max-width: 40rem;
+    }
+}
+@media (max-width: 980px){
+    .containerHero .containerImg .containerPrice {
+        display: none;
+    }
+}
+@media (max-width: 850px){
+    .containerMain{
+        margin-top: 6rem;
+    }
+    .containerHero{
+        grid-template-columns: 1fr;
+        place-items: start;
+        grid-gap: 40px;
+    }
+    .containerHero .imgSlide{
+        max-width: 100%;
+    }
+}
+@media (max-width: 450px){
+    .containerMain{
+        margin-top: 3rem;
+    }
+    .containerHero .boxTexts h1 {
+        font-size: 3rem;
+    }
+    .containerHero .boxTexts .text {
+        font-size: 1.4rem;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        top: 64rem !important;
+    }
+    .swiper-pagination-bullets.swiper-pagination-horizontal{
+        bottom: -5rem !important;
+    }
+    .swiper-button-next{
+        right: 10px !important;
+    }
+}
+
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 2rem !important;
+    color: #fff !important;
+}
+
+
+
+.swiper-pagination-bullets.swiper-pagination-horizontal{
+    bottom: -7rem !important;
+}

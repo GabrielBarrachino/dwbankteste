@@ -1,0 +1,72 @@
+.sectionDiscover{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 18rem;
+    gap: 40px;
+}
+
+.sectionDiscover .img img{
+    width: 100%;
+    max-width: 70rem;
+    border-radius: 15px;
+}
+
+.sectionDiscover .containerDiscover .texts{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+}
+
+.sectionDiscover .containerDiscover .texts .btnContactSecondary{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #226DB4;
+    width: max-content;
+}
+
+.sectionDiscover .containerDiscover .texts .btnContactSecondary img{
+    max-width: 2rem;
+    height: 2rem;
+}
+
+.sectionDiscover .containerDiscover .subTitle{
+    width: 100%;
+    max-width: 68rem;
+    text-align: end;
+    font-size: 4rem;
+}
+.sectionDiscover .containerDiscover .textParagraphDiscover{
+    width: 100%;
+    max-width: 100%;
+    font-size: 1.4rem;
+    margin-bottom: 1.8rem;
+    text-align: end;
+}
+
+@media(max-width: 850px){
+    .sectionDiscover {
+        flex-direction: column-reverse;
+        margin-top: 10rem;
+    }
+    .sectionDiscover .containerDiscover .texts {
+        align-items: center;
+        justify-content: center;
+    }
+    .sectionDiscover .containerDiscover .subTitle {
+        text-align: center;
+        font-size: 3rem;
+    }
+    .sectionDiscover .containerDiscover .textParagraphDiscover {
+        text-align: center;
+    }
+}
+
+.btnContactSecondaryDiscover img{
+    transition: transform 0.3s ease;
+}
+.btnContactSecondaryDiscover:hover img{
+    transform: translateX(5px);
+}

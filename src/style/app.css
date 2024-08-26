@@ -1,0 +1,89 @@
+.sectionApp{
+    background: #fff;
+    padding: 7rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+    margin-top: 20rem;
+    overflow: hidden;
+}
+.sectionApp .texts .title{
+    color: #3B3F49;
+    font-size: 3rem;
+    margin-bottom: 1.2rem;
+}
+.sectionApp .texts .text{
+    color: #5C5C5C;
+    font-size: 1.6rem;
+    width: 100%;
+    max-width: 50rem;
+}
+
+
+.sectionApp .buttonsApp{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+.sectionApp .buttonsApp a{
+    transition: all .3s;
+}
+.sectionApp .buttonsApp a:hover{
+    transform: scale(1.1);
+}
+.sectionApp .buttonsApp a img{
+    max-width: 20rem;
+}
+
+.imgAppLeft{
+    position: absolute;
+    left: 0;
+    top: -120px;
+}
+.imgAppRight{
+    position: absolute;
+    right: 0;
+    top: 120px;
+}
+
+@media(max-width: 1250px){
+    .imgAppLeft{
+        left: -4.4rem;
+        top: -8.6rem;
+        max-width: 35rem;
+    }
+    .imgAppRight{
+        right: -7.6rem;
+        top: 20.6rem;
+        max-width: 35rem;
+    }    
+}
+
+@media(max-width: 970px){
+    .imgAppLeft{
+        left: -2.4rem;
+        top: -5.6rem;
+        max-width: 25rem;
+    }
+    .imgAppRight{
+        right: -5.6rem;
+        top: 23.6rem;
+        max-width: 25rem;
+    }
+    .sectionApp{
+        margin-top: 10rem;
+    }
+}
+@media(max-width: 850px){
+    .imgAppLeft, .imgAppRight{
+        display: none;
+    }
+    .sectionApp {
+        padding: 5rem 2rem;
+    }
+}
